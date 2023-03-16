@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* 
+  Reset CSS 
+  Youtube 👉 https://www.youtube.com/watch?v=Foieq2jTajE 
+  Github  👉 https://github.com/eduardofierropro/Reset-CSS
+*/
+
+:root {
+  --negro: #393939;
+  --tipo-principal: "Outfit", sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  /* width: 100%; */
+  /* display: block; */
+  fill: currentColor;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+}
+
+.contenedor {
+  width: 100%;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta {
+  width: 245px;
+  height: 450px;
+  background-color: #14263e;
+  padding: 1.1em;
+  border-radius: 12px;
+}
+
+.imagen {
+  width: 100%;
+  height: 55%;
+  background-image: url(./images/image-equilibrium.jpg);
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.imagen:hover {
+  background: rgb(0, 255, 247);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 255, 247, 0.2) 0%,
+      rgba(0, 255, 247, 0.2) 100%
+    ),
+    url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contenedor-ojo {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+  transition: all;
+}
+
+.contenedor-ojo:hover {
+  opacity: 100%;
+}
+
+.titulo {
+  font-size: 19px;
+  margin: 1em 0 0.8em 0;
+}
+
+.titulo:hover {
+  cursor: pointer;
+  color: #21ebeb;
+}
+
+.descripcion {
+  margin-bottom: 1.5em;
+}
+
+.descripcion,
+.mini-descripcion {
+  color: #849bba;
+  font-size: 13px;
+}
+
+.eth {
+  color: #21ebeb;
+  margin-left: 0.5em;
+}
+
+.mini-descripcion {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 1.5em 0;
+}
+.contenedor-eth,
+.contenedor-days {
+  display: flex;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  margin-left: 0.5em;
+}
+
+.contenedor-days {
+  flex-direction: row-reverse;
+}
+
+.custom-svg {
+  width: 25px;
+}
+
+.footer {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-top: solid 0.2px #273951;
+  padding: 1em 0 0.8em 0;
+}
+
+.footer > p:hover {
+  cursor: pointer;
+  color: #21ebeb;
+}
+
+.img-avatar {
+  border: solid 1px hsl(0, 0%, 100%);
+  border-radius: 25px;
+  width: 35px;
+  margin-right: 1em;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.creation {
+  color: #21ebeb;
+}
